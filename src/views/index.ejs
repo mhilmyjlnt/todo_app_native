@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman To Do List</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <!-- Link-link pada navbar -->
+        <a href="#">Dashboard</a>
+        <div>
+            <a href="#">Tambah Data</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Cari judul anda disini...">
+        <button type="button" onclick="searchTitle()">Search</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Judul</th>
+                <th>Keterangan</th>
+                <th>Level</th>
+                <th>Status</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Belajar HTML</td>
+                <td>Mempelajari dasar-dasar HTML</td>
+                <td>Normal</td>
+                <td>Belum Selesai</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Hapus</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Belajar CSS</td>
+                <td>Mempelajari styling dengan CSS</td>
+                <td>Prioritas</td>
+                <td>Selesai</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Hapus</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Belajar Sepeda</td>
+                <td>Besok pagi di saparua</td>
+                <td>Normal</td>
+                <td>Belum Selesai</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Hapus</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Belajar Bahasa Inggris</td>
+                <td>Mempelajari verb</td>
+                <td>Prioritas</td>
+                <td>Selesai</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Hapus</button>
+                </td>
+            </tr>
+           
+            <!-- Tambahkan baris lain sesuai kebutuhan -->
+        </tbody>
+    </table>
+</body>
+</html>

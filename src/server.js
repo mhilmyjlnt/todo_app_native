@@ -29,16 +29,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // app use router
-// app.use('/api', authRoute);
-// app.use('/api', userRoute);
-// app.use('/api', todoRoute);
+app.use('/api', authRoute);
+app.use('/api', userRoute);
+app.use('/api', todoRoute);
 
 // app use pages
-// app.use('/js', express.static(path.join(dirname, 'src', 'public', 'js')));
-// app.use('/css', express.static(path.join(dirname, 'src', 'public', 'css')));
-// app.set('view engine', 'ejs');
-// app.set('views', path.join(__dirname, 'src', 'views'));
-// app.use('/', pagesRoute);
+app.use('/js', express.static(path.join(__dirname, 'public', 'js')));
+app.use('/css', express.static(path.join(__dirname, 'public', 'css')));
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+app.use('/', pagesRoute);
 
 // app use seeders if there is available
 
